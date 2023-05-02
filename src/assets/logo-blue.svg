@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="323px" height="323px" viewBox="0 0 323 323" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>TC</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="161" cy="161" r="161"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-338.000000, -367.000000)">
+            <g id="TC" transform="translate(499.588262, 528.588262) rotate(-22.000000) translate(-499.588262, -528.588262) translate(338.588262, 367.588262)">
+                <g id="Rectangle-2">
+                    <g id="Mask">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#FF6544" xlink:href="#path-1"></use>
+                        <path d="M97,69 L97,366 L77,366 L77,69 L-16,69 L-16,49 L352,49 L352,69 L97,69 Z M124.362641,275.52041 C121.847968,274.171998 120.137762,271.518406 120.137762,268.465374 L120.137762,95.465374 C120.137762,93.6834506 120.720353,92.0375986 121.705451,90.7079027 C122.960528,87.9317371 125.754096,86 128.998845,86 L391.432777,86 C395.851055,86 399.432777,89.581722 399.432777,94 L399.432777,98 C399.432777,102.418278 395.851055,106 391.432777,106 L140.137762,106 L140.137762,257 L392.430748,257 C396.849026,257 400.430748,260.581722 400.430748,265 L400.430748,269 C400.430748,273.418278 396.849026,277 392.430748,277 L128.998845,277 C127.270708,277 125.670551,276.452048 124.362641,275.52041 Z" id="Combined-Shape" fill-opacity="0.76" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
