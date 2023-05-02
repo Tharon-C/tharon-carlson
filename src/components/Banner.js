@@ -1,7 +1,7 @@
 import React from 'react'
 import { layout } from 'styled-system'
-import banner from '../assets/banner.svg'
-import mobileBanner from '../assets/mobile-banner.svg'
+import banner from '../images/banner.svg'
+import mobileBanner from '../images/mobile-banner.svg'
 import styled from 'styled-components'
 import Box from './Box';
 

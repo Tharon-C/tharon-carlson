@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { TimelineMax, Power0 } from "gsap";
-import clouds from '../../assets/Clouds.svg';
+import clouds from '../../images/Clouds.svg';
 
 const Wrapper = styled.div({
     overflow: 'hidden',
