@@ -6,12 +6,13 @@ import { layout, space } from 'styled-system'
 import Text, { P } from './Text'
 
 const Card = styled.div`
+  max-width: 400px;
   ${layout}
   ${space}
 `
 
 const ArticleCard = ({post, ...rest}) => (
-  <Card { ...rest } p={[1, 1, 2]} as="article">
+  <Card { ...rest } p={[1, 1, 2]} mb="3" mh="3" as="article">
     <header>
       <Link
         to={`/blog/${post.frontmatter.slug}`}

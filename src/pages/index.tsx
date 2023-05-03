@@ -3,7 +3,7 @@ import type { HeadFC, PageProps } from "gatsby";
 //import 'prismjs/themes/prism-tomorrow.css'
 import Cabin from '../components/graphics/Cabin';
 import Main from '../components/Main';
-import ArchiveLinks from '../components/ArchiveLinks';
+import ArchiveLinks from '../components/EntryLinks';
 import Layout from '../components/Layout';
 import Seo from "../components/Seo";
 
