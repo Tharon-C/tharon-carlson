@@ -1,0 +1,43 @@
+---
+templateKey: blog-post
+title: CyVerse UI
+date: 2019-10-02T02:24:13.977Z
+slug: "cyverse-ui"
+description: A Design System and Component Library
+featuredpost: false
+featuredimage: /img/24px.svg
+tags:
+  - work
+  - design
+  - design system
+  - component library
+---
+At CyVerse on the Atmosphere team, there were common issues that come with a large code base. The team had legacy code to maintain and new features to implement into an existing system. There were consistency issues, unhealthy CSS, and UX problems, as evident by the support tickets the team was receiving. Without a formal designer role, the team decided to leverage a design system and component library to help gain consistency, improve UX, and speed up production.
+
+## No Designer
+The team had no formal designer role, so they wanted a way to steer design systematically. They decided that one of the developers would assume the role of designer part-time for new features and establish design patterns that could be followed by other developers. This allowed them to move quickly to improve the app more holistically without adding to the problem and then back fill with more intentional design starting with major offenders first.
+
+## A Design System
+A design system is a collection of parts that work together in an interconnected whole. It is a set of principles and procedures according to which a framework can be built. Programmers work well within systems or frameworks so without a design background, these principles can be applied to common patterns, getting the team a long way without having to design every screen directly.
+
+### Design Patterns
+Most features can be broken down or abstracted to common patterns. By recognizing these patterns and formalizing them into design patterns, the team can approach new features by determining what patterns they constitute. These patterns are built on the design system, acting as the underlying structure.
+
+### Material Design
+A design system needs good documentation and although not perfect, Material Design is comprehensive. The team made a decision early on to leverage this as a starting point. This allowed them to focus on designing and documenting patterns that are specific to their product.
+
+## Component Library
+A component library is the way the team can capture, document, and consume these patterns. They are code and versioned. They are a source of truth and give the team a consistent UI that is maintainable.
+
+### Atomic Design
+Atomic design is a term coined by Brad Frost. The idea is to break larger components into smaller, more composable components. Rather than having an input with a label and a radio button with a label, the label is its own component and used to make both. This composability helps with maintainability and consistency.
+
+### Material UI
+Just like Material Design, Material UI allowed the team to focus by providing a general well-documented base to work from. Not only does Material UI follow Material Design as its pattern library, but it is also atomic and has a solid theming system.
+
+## CyVerse-UI
+The team had a well-documented design system in Material Design and a robust set of components that could actualize that system in Material-UI. However, their app had very specific but repeatable problems and solutions that were not present. Material Design has room for interpretation, and in some cases, the team felt they had better solutions to their problems. Material-UI is built with an Atomic Design philosophy, so larger organisms needed to be made specific to their app.
+
+To maintain consistency, the team needed to extend the design system and component library to maintain their own specific patterns. For this, they created CyVerse-UI. They used Material-UI as much as possible for the lower level "atoms" to build their higher-level components. By documenting each component with examples of how to use and explanations about when to use them, their component library could double as their design system and style guide.
+
+Originally, the team had started the project as Troposphere-UI, the name of the front-end to their team's application. After other teams learned
