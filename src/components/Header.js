@@ -67,7 +67,7 @@ const Header = ({isLanding = false}) => (
       </NavLinkList>
       <div>
         <GitHubLink
-          href="https://github.com/tharon-c/tharon-personal"
+          href="https://github.com/Tharon-C/tharon-carlson"
           target="_blank"
           rel="noopener noreferrer"
         >
