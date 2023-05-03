@@ -10,53 +10,34 @@ tags:
 ---
 This is my first post. I decided to build a static site for my blog. I'm trying out Gatsby and so far I like it. Gatsby is a framework and static site generator built in node. It uses React for the view layer and graphql for the data layer.
 
-Rather than go into detail about Gatsby or React, as I will hopefully talk more about those in detail, I wanted to say "hello world" and briefly cover what a static site is, why we might use one.
+Rather than go into detail about Gatsby or React, as I will hopefully talk more about those in detail, I wanted to say "hello world" and briefly cover what a static site is, some benifits they offer, and why we might use one.
 
-## What's a static site?
+In the world of web development, there are many different approaches to building a website or web application. One approach that has been gaining popularity in recent years is the use of static sites.
 
-A static site is the most basic form of website. There is no database, API, authentication etc.... just files. Chances are you have already hand coded your own static site when first learning web development. If you are just starting your journey into web development I recommend FreeCodeCamp.org.
+## What is a Static Site?
 
-Loosely speaking, a webpage is a collection of files. The browser requests an HTML file with content and links to the JS, CSS and media files it depends on. The browser then requests all of those files and renders the webpage.
+At its most basic level, a static site is a collection of files that are served directly to the user's browser. There is no dynamic content or server-side processing involved. This means that everything the user sees is pre-built and stored in files on a server. When the user requests a page, the server simply sends the appropriate file back to the browser.
 
-Many web frameworks like Wordpress, generate these files on the server dynamically, on demand. It will look at configuration files, templates, and query the database before rendering an HTML file to send the browser.
+## Why Use a Static Site?
 
-A static site generator like Gastby generates these files in similar way, however all up front, on your computer or different server, then a bundle of static files are uploaded or published to a basic public file server as a static site.
+There are several reasons why a static site might be the perfect fit for your next project:
 
-## Why build a static site?
+### Speed
 
-The main reason is that static sites require a very simple server to host and files are very fast and easy to distribute and load balance. If you don't require things like a database, or user login you might consider building a static site. If you do need these things you might still use a static site and off load these responsibilities to micro services. Let's look at the benefits more closely.
+Because there is no server-side processing involved, static sites are incredibly fast. They require minimal processing power and can be served from a basic file server. This means that your pages will load quickly and your users won't have to wait for server-side code to execute.
 
-### They are Fast
+### Scalability and Cost
 
-Many sites have very complex back end systems. Typically a site is hosted on a server as one monolithic app. A request comes in, passes through many steps, validating, parsing, querying rendering and eventually responding with `some-page.html`.
+Static sites are incredibly scalable. Because they don't require much processing power, they can be distributed across multiple servers to handle high traffic loads. This makes them a cost-effective solution for sites that need to scale quickly or handle large volumes of traffic.
 
-A static site on the other hand has none of that... a request comes in and `some-page.html` goes out. It is the core function of the browser and server, so it is as fast as it gets.
+### Micro Services
 
-### They scale and save money
+Even if your site needs some dynamic content, you can use micro services to handle those requests. For example, you might use a separate service for user authentication, a shopping cart, or payment processing. This allows you to keep your static site lightweight while still providing the functionality your users need.
 
-This simplicity and low compute overhead makes it easy and cheap to distribute across many compute nodes to handle high traffic.
+### An Alternate Web Model
 
-Low compute and high scalability means it will cost less money to host a static site. In some cases even free, when hosting through GH pages, Surge.sh, or Contentful.
-
-### Works well with Micro Services
-
-Even if you do need authentication, login, a shopping cart, etc... These can be hosted separately as dedicated "micro services". This has many advantages like reducing complexity and only using the higher compute overhead when you need it.
-
-Since most of the time we are just serving files, we can handle that with a static file server and reap the benefits above. For example, when we need to process a payment, we make that request to our payment service from the client as an ajax request. We now only pay for the extra compute when we actually need it.
-
-This also keeps services focused, smaller, less complicated and easier to isolate for testing. We can add services as we need them.
-
-### An alternate web model
-
-Static files can also be distributed and shared over peer to peer networks as an alternative to the current HTTP based web model.
-
-Beaker Browser is an experimental browser that enables for a distributed web, where there is no central server. Websites are shared across peers.
-
-This eliminates the complexity of scaling and rewards popularity rather than punishing it. The more people consuming a site, the more people are also sharing it.
+Static sites can be distributed and shared over peer-to-peer networks, which offers an alternative to the current HTTP-based web model. Beaker Browser is an experimental browser that enables a distributed web, where there is no central server. Websites are shared across peers, which can eliminate the complexity of scaling and reward popularity rather than punishing it. This is because the more popular a site is, the more peers it will have to share the load.
 
 ## Conclusion
-So we touched on a lot of ideas without really going into any practical detail. We made claims about speed and scalability with out offering any proof and we didn't really cover any downsides.
 
-So what was the point?
-
-What I hope we accomplished, was to give a better understanding of what a static site is and spark some curiosity to do more research. Perhaps you will consider a static site as a possible approach for your next project.
+Static sites offer many benefits, including speed, scalability, and cost-effectiveness. They can be a great choice for projects that don't require complex server-side processing or dynamic content. If you're interested in learning more, there are many resources available online to help you get started with building your own static site.
