@@ -1,11 +1,10 @@
 ---
 templateKey: blog-post
 title: Why CSS in JS?
-date: 2019-10-02T02:24:13.977Z
+date: 2023-10-02
 slug: "why-css-in-js"
-description: A Design System and Component Library
+description: A choice not a silver bullet
 featuredpost: false
-featuredimage: /img/24px.svg
 tags:
   - work
   - design
@@ -18,12 +17,13 @@ As a fan of CSS in JS, I have successfully transitioned two separate companies w
 
 ## Increased complexity
 
-CSS in JS requires learning new tools and techniques, which can increase the complexity of your codebase and make it harder to maintain.
+CSS in JS requires learning new tools and systems, which can increase the complexity of your codebase. This can make it harder to onboard new developers.
 
 ### Thoughts
-While CSS in JS may require learning new tools and techniques, it makes your codebase more modular, improves code encapsulation, and is easier to maintain over time. This makes it easier to understand as there are fewer factors affecting why a particular element is styled the way it is. JS has better tooling for linting and throws errors. CSS bugs due to syntax can be very difficult to track down. CSS in JS also removes the need for learning and enforcing naming conventions and selector rules. It is easier and more direct to include programmatic or dynamic CSS rules with JS, whereas CSS often has tricks or hacks that are less easy to understand and maintain by others.
 
-To illustrate this, let me provide an anecdote. At my current role, we have a lot of applications still using freemarker and jQuery. We decided that rather than convert these to React at this time, we would rewrite the CSS. For the modular reasons stated above and in other articles, we chose to use SUITCSS, a flavor of BEM. We established "components", patterns, linting rules, wrote documentation, and trained our team. We found that even between us, the architects, there was debate and confusion. Code reviews with the rest of the team exposed more of the same. Even though we had a style guide and linting rules, we still had a lot of confusion and inconsistency. In comparison, our code reviews for styling React components with CSS in JS were much more straightforward, and we had a lot less confusion and inconsistency. We still struggled with naming things, but that was less critical as components are not global like CSS is.
+While CSS in JS may require learning new tools and techniques, it makes your codebase more modular, improves code encapsulation, and is easier to maintain over time. This also makes it easier to understand as there are fewer factors affecting why a particular element is styled the way it is. JS has better tooling for linting and throws errors. CSS bugs due to syntax can be very difficult to track down. CSS in JS also removes the need for learning and enforcing naming conventions and selector rules. It is easier and more direct to include programmatic or dynamic CSS rules with JS, whereas CSS often has tricks or hacks that are less easy to understand and maintain by others.
+
+To illustrate this, let me provide an anecdote. At my current role, we have a lot of applications still using freemarker and jQuery. We decided that rather than convert these to React at this time, we would rewrite the CSS. For the modular benefits and documentation we chose to use SUITCSS (a flavor of BEM) as our naming convention. We made components from our component library, pattern examples, linting rules, wrote documentation, and trained our team. We found that even between us, the architects, there was still debate and confusion. Code reviews with the rest of the team exposed more of the same. Even though we had a style guide and linting rules, we still had a lot of confusion and inconsistency. In comparison, our code reviews for styling React components with CSS in JS were much more straightforward, and we had a lot less confusion and inconsistency or disagreements. We still struggled with naming things, but that was less critical as components are not global like CSS is.
 
 ## Tooling
 
