@@ -1,0 +1,93 @@
+---
+templateKey: blog-post
+title: Designers Are From Mars
+date: 2023-05-07
+slug: collaborating-with-designers
+description: Advice for frontend engineers on collaborating with designers
+featuredpost: false
+tags:
+  - work
+  - design
+  - design system
+  - component library
+---
+
+Frontend engineers and designers have complementary skills that are essential to creating cohesive and user-friendly interfaces. However, these two worlds have very deferent challenges and approaches and can clash with poor communication and collaboration. When designers and engineers don't get along it can harm the quality and timeliness of the final product.
+
+This post will cover effective collaboration strategies for frontend engineers and designers, including communication, feedback, and iteration. While this post assumes the existence of a design system and component library, the takeaways are still valuable even if such a system is not yet in place. This post may even inspire you to establish a design system at your company.
+
+## Communication
+
+Effective communication is crucial for successful collaboration between designers and engineers. While both roles share the goal of creating user-friendly interfaces, they may prioritize different aspects and face distinct challenges related to there role. To bridge this gap, it's essential to find common ground. Here are some tips to help achieve that.
+
+### Establish a common language 
+
+It is good for designers and frontend engineers to have a shared vocabulary to communicate their ideas and concerns effectively. This shared language can include design principles, UI patterns, and software focused concepts like naming conventions, modularity, reusability and maintainability.
+
+#### Learn and Teach
+A good way to do this is adopting a learning and teaching mentality. Be genuinely curious about learning of their world. And be open and patient in teaching yours.
+
+Spend time asking questions and getting clarification on words or concepts you are unfamiliar with. Aks for resources that will help to learn terms they use and better understand the concepts behind them. In kind share terminology and concepts from your world that are relevant. Try capturing these terms in the design system or a wiki and always use the agreed name for something even when speaking to other stake holders or engineers. This will help to establish a common language as a company and make it easier to communicate. 
+
+### Don't Get Into The Weeds
+Avoid getting into the weeds of code. Speak at a high level about the system from the UX down and only go as deep as they ask you to go. Stick with where your worlds overlap. That is not to say you can't speak to challenges just try to speak about it at a high level. For instance, if the designs have discrepancies in a component's behavior or look that is not reflected in the component library, you can say something like "This looks like X component but has this variance in Y way. Is this intentional?". They may say no make it like the component we have. No more conversation. Or they may say yes, can we make that component do that? If there is a reason it should be a different component, say that the way the way the component is built it would be better that it be a new one. They can decide if it is worth it or not or ask you to explain in more detail.
+
+
+### Share Ownership of The Design System and Component Library
+
+This is a great way to formalize your common language. It is also a place for design and engineering to clash. Because the tools we use are different and the relationships between values in the design token can be different within their tools versus the components we are building. It is easy for false assumptions and miscommunication to arise. If your product is highly theameable, your design team might design and sell themes to customers that break the system you have in place.
+
+The best way to avoid this is to work with design on the system and those relationships. Show them the relationships you are working with and ask for feedback. Ask to see how they are organizing assets and try to sync so that every component is represented in their system and the themeable values match up. Let the designer design the component examples in the component library and have access so they can check or reference it often. Figma and Sketch offer reusable objects that can be used to represent components, design should have one for component in your library, they should guide the library and maintain the system but they could use help and guidance from engineers to help make the system robust. I think Figma is the best design software for this as it can more closely model the design system and component library you have in the code base. It can also consume the same design token your coded components use.
+
+### Help Designers with Their Tools
+
+Engineers seek out ways to place constraints on the system to make it more robust and maintainable. Designers on the other hand are typically looking for freedom to create and express themselves. This can lead to a clash of priorities. Programs like Figma and Sketch are great for designers to create and express themselves but they are not great for enforcing a system out of the box. As engineers we can help them to create a system within these tools through plugins and process. I find once designers have components or symbols in their design tools that represent the components in the code base they are more likely to use them. When they can also use the same design tokens that the code base uses to theme their components they start to get excited. This is a great way to enforce the system and make it easier for them to create and express themselves at a higher level without breaking the system. If they can get to a point where their workflow is more productive because of these systems, they will usually be just as emphatic about enforcing the systems as you are.
+
+### Establish Empathy 
+Empathy is also important in establishing effective communication between designers and frontend engineers. For instance, designers may not be familiar with the technical limitations or challenges that engineers face, while engineers may not be familiar with the design principles or creative process that designers use.
+
+One important thing to understand about designers is that they have to appeal to stake holders and clients as well as the end user. They have to sell their designs and defend their decisions in a highly _subjective_ process that sometimes ends in difficult compromises the designer may dislike as much as you. While for engineers it is a much more _objective_ process. They are given a set of requirements and mocks, if they deliver on those requirements they have done their job if they don't like the design they can detach and find pride in code quality. Sometimes it is easy to misguidedly blame the designer for a decision that actually was made by a stake holder or client. It is important to remember that they are not the enemy and they are not the decision maker. They are just trying to do their job and make the best product they can in a very subjective process.
+
+By establishing empathy, both designers and engineers can gain a better understanding of each other's perspectives and challenges. And hopefully actually make each other's jobs easier by offering perspectives or solutions that they may not have considered.
+
+### Meet Regularly
+
+Designers and frontend engineers should attend each other's meetings and sync-ups to ensure that they are aligned on project goals, timelines, and challenges. And that in both phases of a project all perspectives are represented and there are no surprises.
+
+
+
+## Feedback
+
+Feedback is a critical component of effective collaboration between frontend engineers and designers. Here are some best practices for providing and receiving feedback:
+
+### Be respectful
+
+Feedback should be given in a respectful and professional manner. Criticism should be focused on the design or code, not the person.
+
+### Be specific
+
+Feedback should be specific, actionable, and tied to project goals. For example, rather than saying "I don't like this color," provide specific feedback on why that color choice may not align with the project's brand or target audience.
+
+### Embrace iteration 
+
+Both frontend engineers and designers should be open to iteration and improvement. Feedback should be used as an opportunity to improve the final product and move the project forward.
+
+## Iteration
+
+Iteration is the process of making incremental improvements to a design or codebase. Here are some tips for effective iteration
+
+### Build prototypes
+
+Designers and frontend engineers should work together to build prototypes and user tests to validate design decisions and frontend implementations.
+
+### Focus on the user 
+
+User feedback should inform the design and development process. Designers and frontend engineers should work together to incorporate user feedback and improve the user experience.
+
+### Stay aligned on project goals
+
+Designers and frontend engineers should stay aligned on project goals and priorities throughout the iteration process. This alignment can help ensure that design and development decisions are in service of the project's larger goals and objectives.
+
+## Conclusion
+
+Collaboration between frontend engineers and designers is critical to creating cohesive and user-friendly interfaces for web applications. Effective collaboration requires clear and respectful communication, constructive feedback, and a willingness to iterate and improve. By implementing these strategies, frontend engineers and designers can work together to create successful and impactful projects.
